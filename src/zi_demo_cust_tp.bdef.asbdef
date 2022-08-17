@@ -1,0 +1,17 @@
+managed implementation in class zbp_i_demo_cust_tp unique;
+//strict;
+
+define behavior for ZI_DEMO_CUST_TP //alias <alias_name>
+persistent table ztab_demo_cust
+lock master
+etag master ChangedAt
+{
+  mapping for ztab_demo_cust corresponding
+  { Address = address; ChangedAt = changedat; ChangedBy = changedby; City = city; Company = company;
+    Country = country; CreatedAt = createdat; CreatedBy = createdby; Customerid = customerid; Fax = fax;
+    Name = name; Phone = phone; Postalcode = postalcode; Region = region; Title = title; }
+  field ( readonly ) CreatedAt, CreatedBy, ChangedAt, ChangedBy;
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Demo Customer Service'
+define service ZDEMOCUSTSRV {
+  expose ZI_DEMO_CUST_TP;
+}

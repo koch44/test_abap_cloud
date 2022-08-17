@@ -1,0 +1,5 @@
+CLASS zbp_i_demo_cust_tp DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_demo_cust_tp.
+ENDCLASS.
+
+CLASS zbp_i_demo_cust_tp IMPLEMENTATION.
+ENDCLASS.
